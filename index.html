@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de EPIs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login-screen" class="screen">
+            <img src="/img/logoapp2.png" alt="Logo do App" class="logo">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Usuário" />
+            <input type="password" id="password" placeholder="Senha" />
+            <button id="login-button">Entrar</button>
+            <p id="message" class="error-message"></p>
+        </div>
+
+        <div id="home-screen" class="screen hidden">
+            <h1 id="welcome-message"></h1>
+            <p>Você entrou com sucesso no app.</p>
+            <h2>Selecione os EPIs utilizados:</h2>
+            <label><input type="checkbox" id="capacete"> Capacete</label><br>
+            <label><input type="checkbox" id="oculos"> Óculos de proteção</label><br>
+            <label><input type="checkbox" id="luvas"> Luvas</label><br>
+            <label><input type="checkbox" id="botas"> Botas de Segurança</label><br>
+            <button id="logout-button">Sair</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
